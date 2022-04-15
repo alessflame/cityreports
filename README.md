@@ -1,6 +1,6 @@
 # Pollution reports
 
-![alt image](public\assets\images\factory-g57bdd9083_640.png)
+![alt image](\public\assets\images\factory-g57bdd9083_640.png)
 
 this is an app created to collect the pollution reports of cities
 
