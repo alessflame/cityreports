@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+     <meta charset="UTF-8">
+     <meta http-equiv="X-UA-Compatible" content="IE=edge">
+     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     <link rel="stylesheet" href="/assets/css/style.css">
+     <title>CityReporter</title>
+</head>
+<body>
+
+     <header>
+          <ul id="menu">
+               <li><a href="/">Home</a></li>
+               <li><a href="/reports">Reports</a></li>
+               <li><a href="/cities">Cities</a></li>
+            </ul>
+          <h1>CityReporter</h1>
+
+          <section>this is the complete list of all our reports </section>
+
+     </header>
+     <br>
+
+     <div class="reportsContainer">
+          
+          <% for(let i=0; i< reports.length; i++){ %>
+          <div class="reports"> <span class="spanReports">
+               <h2 class="name">
+              <a href="/reports/<%=reports[i].city%>"> <%= reports[i].city %> </a>
+               </h2>
+           <span class="level"><b class="levelsValue"><%= reports[i].level %></b></span> </span>
+          <section class="sectionImages"> <img class="imagesCity" src='/assets/uploads/<%= reports[i].image %>' alt="ciao">
+               </section>
+          <% } %></div>
+           </div>
+     
+
+
+     <script src="/assets/js/load.js"></script>
+</body>
+</html>

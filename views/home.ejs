@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+     <meta charset="UTF-8">
+     <meta http-equiv="X-UA-Compatible" content="IE=edge">
+     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     <link rel="stylesheet" href="/assets/css/style.css">
+     <title>CityReporter</title>
+</head>
+<body>
+
+     <header>
+          <ul id="menu">
+             <li><a href="/">Home</a></li>
+             <li><a href="/reports">Reports</a></li>
+             <li><a href="/cities">Cities</a></li>
+          </ul>
+
+          <h1>CityReporter</h1>
+          <b>a solution against pollution</b>
+
+     </header>
+
+
+     <div id="form">
+
+          <form method="post" action="/reports" enctype="multipart/form-data">
+
+               <label for="city">insert city</label>
+               <input type="text" id="city" name="city" placeholder="city" required>
+               <label for="level">enter a number to represent the pollution level from 1 at 10</label>
+               <input type="range" name="level" id="level" min="0" max="10" >
+               
+               <input type="file" name="imageUpload" id="imageUpload" >
+               <input type="submit" value="Invia">
+
+
+          </form>
+
+     </div>
+     
+</body>
+</html>
